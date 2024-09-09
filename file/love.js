@@ -1,4 +1,4 @@
-﻿(function(window){
+(function(window){
 
     function random(min, max) {
         return min + Math.floor(Math.random() * (max - min + 1));
@@ -457,7 +457,8 @@
             var ctx = s.tree.ctx;
             ctx.save();
         	ctx.beginPath();
-        	ctx.fillStyle = '#ff496c';
+            ctx.fillStyle = '#ffffff';
+        	// ctx.fillStyle = '#ff496c';
             // ctx.shadowColor = 'rgb(35, 31, 32)';
             ctx.shadowBlur = 2;
         	ctx.moveTo(p.x, p.y);
