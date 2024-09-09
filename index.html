@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>HBD love </title>	    
         <link type="text/css" rel="stylesheet" href="./file/default.css">
@@ -30,17 +30,15 @@
             <div id="wrap">
                 <div id="text">
                     <div id="code">
-                      <span class="say"> Happiest Birthday  </span><br>
+                      <span class="say">Happiest Birthday</span><br>
                       <span class="say">My Beautiful🫀 </span><br> 
-                      <span class="say">My Love❤️ </span><br>             
-                      <span class="say">I'LL GIVE YOU</span><br>
-                      <span class="say">ALL THE LOVE🥰</span><br>
-                      <span class="say">THAT ONE CAN💕</span><br>
-                      <span class="say">Your Boyfriend Kratik💋 </span><br>
-                      <span class="say"><span class="space"></span></span> </font>
-                          <br />
-                          <br />
-                      </p>
+                      <span class="say">My Love❤️ </span><br>
+                      <span class="say">My Everthing🌏 </span><br>             
+                      <span class="say">I'LL GIVE YOU </span><br>
+                      <span class="say">ALL THE LOVE🥰 </span><br>
+                      <span class="say">THAT ONE CAN💕 </span><br>
+                      <span class="say">I LOVE YOU MY DREAMGIRL </span><br> 
+                      <span class="say">💋💋I LOVE YOU SO SO SO SO SO MUCH💋💋 </span>
                     </div>
                   </div>
 
@@ -95,7 +93,7 @@
                 ]] 
             ],
             bloom: {
-                num: 700,
+                num: 4000,
                 width: 1080,
                 height: 650,
             },
@@ -172,8 +170,8 @@
             tree.snapshot("p2", 500, 0, 610, 680);
 
             canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
-            canvas.css("background", "#ffe");
-            $await(Jscex.Async.sleep(300));
+            canvas.css("background", "none");
+            $await(Jscex.Async.sleep(1000));
             canvas.css("background", "none");
         }));
 
@@ -193,13 +191,13 @@
 		    together.setHours(24);						//小时	
 		    together.setMinutes(0);					//分钟
 		    together.setSeconds(0);					//秒前一位
-		    together.setMilliseconds(2);				//秒第二位
+		    together.setMilliseconds(0);				//秒第二位
 
 		    $("#code").show().typewriter();
             $("#clock-box").fadeIn(1000);
             while (true) {
                 timeElapse(together);
-                $await(Jscex.Async.sleep(1000));
+                $await(Jscex.Async.sleep(200));
             }
         }));
 
