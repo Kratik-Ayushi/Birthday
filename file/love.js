@@ -152,22 +152,34 @@
             ctx.restore();
         },
         drawText: function() {
-            var ctx = this.tree.ctx, heart = this.heart;
-            var point = heart.point, color = heart.color, 
+            var ctx = this.tree.ctx, 
+                heart = this.heart;
+            var point = heart.point, 
+                color = heart.color, 
                 scale = heart.scale;
+            
+            var myFont = new FontFace('myFont', 'url(https://fonts.cdnfonts.com/css/love-light)');
+
+            myFont.load().then(function(font){
+            
+                // with canvas, if this is ommited won't work
+                document.fonts.add(font);
+                console.log('Font loaded');
+            
+            });
             ctx.save();
             ctx.strokeStyle = color;
-            ctx.fillStyle = '#ff0000';
+            ctx.fillStyle = '#ffffff';
             ctx.translate(point.x, point.y);
             ctx.scale(scale, scale);
             ctx.moveTo(0, 0);
     	    ctx.lineTo(15, 15);
     	    ctx.lineTo(100, 15);
             ctx.stroke();
-
+            
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            ctx.font = "12px,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
+            //ctx.font = "15px myFont";
             ctx.fillText("Click Me:) ", 30, -5);
             ctx.fillText("Birthday Queen !", 28, 10);
             ctx.restore();
