@@ -171,7 +171,7 @@
             
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            ctx.font = "15px sans-serif";
+            ctx.font = "12px sans-serif";
             ctx.fillText("Click Me <3 ", 30, -5);
             ctx.fillText("Birthday Queen !", 28, 10);
             ctx.restore();
