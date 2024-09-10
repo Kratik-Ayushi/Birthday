@@ -158,15 +158,7 @@
                 color = heart.color, 
                 scale = heart.scale;
             
-            var myFont = new FontFace('myFont', 'url(https://fonts.cdnfonts.com/css/love-light)');
-
-            myFont.load().then(function(font){
             
-                // with canvas, if this is ommited won't work
-                document.fonts.add(font);
-                console.log('Font loaded');
-            
-            });
             ctx.save();
             ctx.strokeStyle = color;
             ctx.fillStyle = '#ffffff';
@@ -179,8 +171,8 @@
             
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
-            //ctx.font = "15px myFont";
-            ctx.fillText("Click Me:) ", 30, -5);
+            ctx.font = "15px sans-serif";
+            ctx.fillText("Click Me <3 ", 30, -5);
             ctx.fillText("Birthday Queen !", 28, 10);
             ctx.restore();
         },
